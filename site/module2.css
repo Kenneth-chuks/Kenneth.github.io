@@ -1,3 +1,269 @@
+*{
+    margin: 5px;
+    box-sizing: border-box;
+}
 body{
+    background-color: rgb(122, 87, 87);
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px;
+}
+
+/******HEADER*******/
+header{
+    text-align: center;
+}
+
+
+.row{
+width: 100%;
+}
+
+/********SECTION 1***********/
+.section1{
+    border: 5px solid black;
+    background-color: beige;
+    float: left;
+    padding-top: 0%;
+    width: 400px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    
+    height: 150px;
+
+}
+h4{
+    text-transform: capitalize;
+}
+
+
+
+.inner1{
+    padding-left: 0%;
+    font-style: bold;
     background: red;
+    border-left: 5px solid black;
+    border-bottom: 5px solid black;
+    text-align: center;
+    float:right;
+    width: 100px;
+    margin-top: 0%;
+    margin-bottom: 6px;
+    margin-right: 0%;
+    text-transform: capitalize;
+}
+
+.context1{
+    clear: both;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    text-align: left;
+    text-transform: capitalize;
+}
+
+
+
+/***********SECTION 2***********/
+.section2{
+    border: 5px solid black;
+    background-color: beige;
+    float: left;
+    width: 200px;
+    padding-top: 0%;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    height: 150px;
+
+}
+
+.inner2{
+    padding-left: 0%;
+    font-style: bold;
+    background: rgb(255, 166, 0);
+    border-left: 5px solid black;
+    border-bottom: 5px solid black;
+    text-align: center;
+    float:right;
+    margin-bottom: 6px;
+    margin-top: 0%;
+    width: 100px;
+    margin-right: 0%;
+    text-transform: capitalize;
+}
+
+.context2{
+    clear: both;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+    font-style:bold;
+    text-transform: capitalize;
+}
+
+/************SECTION 3*******/
+.section3{
+    border: 5px solid black;
+    background-color: beige;
+    float: left;
+    padding-top: 0%;
+    margin-right: 10px;
+    height: 150px;
+}
+
+.inner3{
+    padding-left: 0%;
+    font-style: bold;
+    background: rgb(0, 255, 115);
+    border-left: 5px solid black;
+    border-bottom: 5px solid black;
+    text-align: center;
+    width: 100px;
+    float:right;
+    margin-bottom: 6px;
+    margin-top: 0%;
+    margin-right: 0%;
+    text-transform: capitalize;
+}
+
+.context3{
+    clear: both;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-transform: capitalize;
+    text-align: left;
+}
+
+/*****desktop view******/
+@media (min-width: 992px){
+    .section1, .section2, .section3{
+        width: auto;
+    }
+    .col-lg-1{
+        width: 8.33%;
+    }
+    .col-lg-2{
+        width: 16.66%;
+    }
+    .col-lg-3{
+        width: 25%;
+    }
+    .col-lg-4{
+        width: 32.5%;
+    }
+    .col-lg-2{
+        width: 41.66%;
+    }
+    .col-lg-6{
+        width: 50%;
+    }
+    .col-lg-7{
+        width: 58.33%;
+    }
+    .col-lg-8{
+        width: 66.66%;
+    }
+    .col-lg-9{
+        width: 74.99%;
+    }
+    .col-lg-10{
+        width: 83.33%;
+    }
+    .col-lg-11{
+        width: 91.66%;
+    }
+    .col-lg-12{
+        width: 100%;
+    }
+    fieldset{
+        width: 80%;
+    }
+}
+
+
+/* tablet view */
+@media (min-width: 768px) and (max-width: 991px){
+    .section1, .section2, .section3{
+        float: left;
+    }
+    .col-md-1{
+        width: 8.33%;
+    }
+    .col-md-2{
+        width: 16.66%;
+    }
+    .col-md-3{
+        width: 25%;
+    }
+    .col-md-4{
+        width: 33%;
+    }
+    .col-md-5{
+        width: 41.66%;
+    }
+    .col-md-6{
+        width: 46%;
+    }
+    .col-md-7{
+        width: 58.33%;
+    }
+    .col-md-8{
+        width: 66.66%;
+    }
+    .col-md-9{
+        width: 74.99%;
+    }
+    .col-md-10{
+        width: 83.33%;
+    }
+    .col-md-11{
+        width: 93.66%;
+    }
+    .col-md-12{
+        width: 100%;
+    }
+}
+
+/*******mobile view*******/
+@media (max-width: 767px){
+    .section1, .section2, .section3{
+        float: left;
+    }
+
+    .col-sm-1{
+        width: 8.33%;
+    }
+    .col-sm-2{
+        width: 16.66%;
+    }
+    .col-sm-3{
+        width: 25%;
+    }
+    .col-sm-4{
+        width: 33%;
+    }
+    .col-sm-5{
+        width: 41.66%;
+    }
+    .col-sm-6{
+        width: 50%;
+    }
+    .col-sm-7{
+        width: 58.33%;
+    }
+    .col-sm-8{
+        width: 66.66%;
+    }
+    .col-sm-9{
+        width: 74.99%;
+    }
+    .col-sm-10{
+        width: 83.33%;
+    }
+    .col-sm-11{
+        width: 91.66%;
+    }
+    .col-sm-12{
+        width: 100%;
+    }
 }
